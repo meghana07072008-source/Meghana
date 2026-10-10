@@ -1,0 +1,82 @@
+<html>
+<head>
+<style>
+
+.box{
+    background:lightgrey;
+    width:180px;
+    height:245px;
+    position:relative;
+    margin:0 auto;
+}
+
+.ball1, .ball2, .ball3{
+    width:30px;
+    height:30px;
+    top:215px;
+    border-radius:50%;
+    position:absolute;
+}
+
+.ball1{
+    background:red;
+    left:20px;
+    animation:ball1 2s linear 2 alternate;
+}
+
+.ball2{
+    background:blue;
+    left:70px;
+    animation:ball2 2s linear 2 alternate;
+    animation-delay:4s;
+}
+
+.ball3{
+    background:green;
+    left:120px;
+    animation:ball3 2s linear 2 alternate;
+    animation-delay:8s;
+}
+
+@keyframes ball1{
+    from{
+        transform:translateY(0px);
+    }
+    to{
+        transform:translateY(-215px);
+    }
+}
+
+@keyframes ball2{
+    from{
+        transform:translateY(0px);
+    }
+    to{
+        transform:translateY(-215px);
+    }
+}
+
+@keyframes ball3{
+    from{
+        transform:translateY(0px);
+    }
+    to{
+        transform:translateY(-215px);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="ball1"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+
+</div>
+
+</body>
+</html>
